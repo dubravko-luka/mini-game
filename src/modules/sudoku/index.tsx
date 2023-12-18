@@ -51,7 +51,7 @@ const SudokuContainer: React.FC<Props> = () => {
         valid: (
           item.valid === TYPE_ENUM.DEFAULT
             ? TYPE_ENUM.DEFAULT
-            : item.num === '-'
+            : item.num === '-' || item.num === ''
               ? TYPE_ENUM.NOT_INPUT
               : item.num === sudoku.solution[index]
                 ? TYPE_ENUM.VALID
@@ -76,7 +76,7 @@ const SudokuContainer: React.FC<Props> = () => {
               <button
                 className={`
                 px-4 py-2 bg-white capitalize font-bold hover:bg-black hover:text-white border
-                ${sudoku.difficulty === item ? 'bg-black text-white' : ''}
+                ${sudoku.difficulty === item ? '!bg-black !text-white' : ''}
               `}
                 onClick={() => generateSudoku(item)}
                 key={index}

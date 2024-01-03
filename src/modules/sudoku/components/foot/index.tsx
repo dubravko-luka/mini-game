@@ -9,7 +9,7 @@ type Props = {
 const HeadSudoku: React.FC<Props> = () => {
   return (
     <>
-      <div className={`${styles.wrapper} w-full`}>
+      <div className={`${styles.wrapper} w-full opacity-10`}>
         <div className={`${styles.content} grid grid-cols-12 gap-3`}>
           <div className={`${styles.headTask} col-span-3`}>
             <div>

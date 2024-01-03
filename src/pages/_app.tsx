@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Provider store={store}>
       <DefaultSeo {...seoConfig} />
       <WindowResizeHandler />
-      <div className={`max-w-screen m-auto overflow-hidden bg-bg-main p-5 pb-[100px] min-h-screen`}>
+      <div className={`max-w-screen m-auto overflow-hidden bg-bg-main pb-[100px] min-h-screen`}>
         <Component {...pageProps} />
       </div>
     </Provider>

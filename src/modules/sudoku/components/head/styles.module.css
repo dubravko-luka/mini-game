@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  border: 1px solid #fff;
+  max-width: 550px;
+  width: 100%;
+}
+
+.headTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.headTitle {
+  color: #acacac;
+  font-size: 14px;
+  text-align: center;
+}
+
+.headContent {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 409px) {
+  .headTask {
+    padding: 5px;
+  }
+}

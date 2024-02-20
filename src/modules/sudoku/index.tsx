@@ -34,7 +34,7 @@ const SudokuContainer: React.FC<Props> = () => {
   return (
     <>
       <p className="text-center my-3 font-bold text-white text-2xl">Sudoku</p>
-      <Head />
+      <Head difficulty={difficulty[2]} />
       <Play
         sudoku={sudoku}
         setSudoku={setSudoku}

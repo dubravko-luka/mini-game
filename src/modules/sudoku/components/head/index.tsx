@@ -2,10 +2,10 @@ import React, { memo } from 'react';
 import styles from './styles.module.css'
 
 type Props = {
-  //
+  difficulty?: string
 };
 
-const HeadSudoku: React.FC<Props> = () => {
+const HeadSudoku: React.FC<Props> = ({ difficulty }) => {
   return (
     <>
       <div className={`${styles.wrapper} w-full opacity-10`}>
@@ -13,7 +13,7 @@ const HeadSudoku: React.FC<Props> = () => {
           <div className={`${styles.headTask} spsm:col-span-3 col-span-6`}>
             <div>
               <p className={`${styles.headTitle}`}>Difficulty</p>
-              <p className={`${styles.headContent} font-medium`}>Medium</p>
+              <p className={`${styles.headContent} font-medium`}>{difficulty}</p>
             </div>
           </div>
           <div className={`${styles.headTask} spsm:col-span-3 col-span-6`}>

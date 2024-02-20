@@ -22,7 +22,7 @@ const SudokuContainer: React.FC<Props> = () => {
   });
 
   const _generateSudoku = async () => {
-    const { sudoku, _puzzle } = await generateSudoku(difficulty[0])
+    const { sudoku, _puzzle } = await generateSudoku(difficulty[2])
     setSudoku(sudoku)
     setPuzzle(_puzzle)
   }
